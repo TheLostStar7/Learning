@@ -1,1 +1,40 @@
+-- comments? yeah comments this line would be ignored and a code could be behind the -- and it would work:>
 
+[[
+multi lined
+comment
+also ignored
+]]
+
+Variable:
+local word = "LET'S GOOOOO I CAN FINALLY DO SOMETHING")
+
+Outputers:
+print("WSG G") -- type: print output: WSG G
+warn("FINE WHAT ABT U") -- type: warning output: FINE WHAT ABT U
+error("AWESOME") -- type: error output: AWESOME
+
+Mix of those third
+local word = "SCRIPTERS"
+print("HELLO "..word)
+-- this shouldn't be too hard
+[[
+also it's a bit different
+and the output is: HELLO SCRIPTERS
+]]
+
+A for count loop -- is what i call it
+for i=1,2 do
+print("WOULD U MIND ME GOING GAGAGAG "..i)
+end
+[[
+output:
+WOULD U MIND ME GOING GAGAGAG 1
+WOULD U MIND ME GOING GAGAGAG 2
+
+for i=1,[amount of times it does it] do
+do whatever
+end -- just to end it
+]]
+
+-- later i would update this:>
