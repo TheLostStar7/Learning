@@ -1,40 +1,64 @@
 -- comments? yeah comments this line would be ignored and a code could be behind the -- and it would work:>
 
-[[
+--[[
 multi lined
 comment
 also ignored
 ]]
 
 Variable:
-local word = "LET'S GOOOOO I CAN FINALLY DO SOMETHING")
+
+local word = "LET'S GOOOOO I CAN FINALLY DO SOMETHING"
 
 Outputers:
+
 print("WSG G") -- type: print output: WSG G
 warn("FINE WHAT ABT U") -- type: warning output: FINE WHAT ABT U
 error("AWESOME") -- type: error output: AWESOME
 
-Mix of those third
+Mix of those third:
+
 local word = "SCRIPTERS"
 print("HELLO "..word)
 -- this shouldn't be too hard
-[[
+--[[
 also it's a bit different
 and the output is: HELLO SCRIPTERS
 ]]
 
-A for count loop -- is what i call it
+A for count loop: -- is what i call it
+
 for i=1,2 do
-print("WOULD U MIND ME GOING GAGAGAG "..i)
+  print("WOULD U MIND ME GOING GAGAGAG "..i)
 end
-[[
+
+--[[
 output:
+
 WOULD U MIND ME GOING GAGAGAG 1
 WOULD U MIND ME GOING GAGAGAG 2
 
 for i=1,[amount of times it does it] do
 do whatever
 end -- just to end it
+]]
+
+A For Loop:
+
+local plrs = game:GetService("Players")
+for _,plr in pairs(plrs:GetPlayers()) do
+  if plr ~= plrs.LocalPlayer then
+    local hi = Instance.new("Highlight",plr.Character)
+  end
+end
+
+--[[
+Gets the "Players" service which is used to interact with players in the game
+Starts a loop through all players in the game 'plrs:GetPlayers()' gets a list of all players, and 'for _,plr in pairs' means for each player in that list
+Checks if the player in the loop is NOT the local player (the one currently using the code)
+If the player is not the local player this line creates a new "Highlight" instance and attaches it to the player's character This effectively highlights the other players
+Ends the if statement
+Ends the for looop
 ]]
 
 -- later i would update this:>
