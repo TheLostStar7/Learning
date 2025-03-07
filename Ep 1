@@ -54,7 +54,7 @@ end
 
 --[[
 Gets the "Players" service which is used to interact with players in the game
-Starts a loop through all players in the game 'plrs:GetPlayers()' gets a list of all players, and 'for _,plr in pairs' means for each player in that list
+Starts a loop through all players in the game 'plrs:GetPlayers()' gets a list of all players and 'for _,plr in pairs' means for each player in that list
 Checks if the player in the loop is NOT the local player (the one currently using the code)
 If the player is not the local player this line creates a new "Highlight" instance and attaches it to the player's character This effectively highlights the other players
 Ends the if statement
